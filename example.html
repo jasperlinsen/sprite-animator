@@ -2,13 +2,18 @@
 	<head>
 		<script type="text/javascript" src="sprite-animator.js"></script>
 		<script type="text/javascript">
+			// This creates a new 200x200 div element with the image background, 10 frames and some style elements
 			var circle = new sprite({image:"example.gif",end:10,width:200,style:"position: fixed; right: 50px; top: 50%; margin-top: -100px;",speed:200});
 		</script>
 	</head>
 	<body>
+		<!-- The image used is 200x2000, which is 10 frames of 200x200 -->
 		<img src="example.gif" />
+		<!-- This will write it to the page, if you use jquery you can use circle.jq() to get back a jquery element that can be amended ($("#ID")), for standard javascript you can use circle.js() to get back document.getElementById("ID"); -->
 		<script type="text/javascript">
+		// This writes to document using regular javascript.
 		document.write(circle.dom());
+		// This starts the loop
 		circle.startloop();
 		</script>
 	</body>
