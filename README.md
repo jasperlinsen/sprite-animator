@@ -6,14 +6,19 @@ The whole script only requires three initial values to be functional and allows 
 
 Calling the script is as simple as assigning the function to a variable:
  - var mySprite = new sprite({image:"path/to/image.ext",width:200,end:10});
+
 Then you can get back the element code by calling
- - var spriteDOM = mySprite.dom(),
+ - var spriteDOM = mySprite.dom();
+
 which can be appended to the DOM itself by calling
  - document.write(spriteDOM);
+
 Triggering the animation can de done by calling
  - mySprite.animate();
+
 To loop the animation endlessly, you can call
  - mySprite.startloop();
+
 To end the loop, just call
  - mySprite.endloop();
 
